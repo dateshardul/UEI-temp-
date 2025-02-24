@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEI Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="title">Unified Employment Interface</div>
+        <div class="links">
+            <a id="recruit-link" href="#">Recruit</a>
+            <a id="onboard-link" href="#">Onboard</a>
+            <a id="perform-link" href="#">Perform</a>
+        </div>
+    </div>
+
+    <div id="recruit-dashboard">
+        <h1>Recruit Dashboard</h1>
+        <button id="create-job-btn">+ Create Job Posting</button>
+    
+        <form id="job-form">
+            <label for="job-title">Job Title:</label>
+            <input type="text" id="job-title" name="job-title" required>
+    
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+    
+            <label for="skills-required">Skills Required:</label>
+            <textarea id="skills-required" name="skills-required" required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    
+    <div id="onboard-dashboard">
+        <h1>Welcome to [Company Name], [New Hire Name]!</h1>
+        <p>We're thrilled to have you join our team! Here's what you need to get started:</p>
+        <ul>
+            <li>Complete HR Paperwork</li>
+            <li>Review Company Handbook</li>
+            <li>Set up your Workspace</li>
+            <li>Attend Welcome Meeting</li>
+        </ul>
+
+                <!-- Access Role Training Button -->
+        <button id="access-training-button" type="button">Access Role Training</button>
+
+        <!-- Role-Specific Training Modules Section (Initially Hidden) -->
+        <section id="training-modules-section" class="hidden">
+            <h2>Role-Specific Training Modules</h2>
+            <ul>
+                <li>Module 1: Company Culture & Values</li>
+                <li>Module 2: Role-Specific Skills Training</li>
+                <li>Module 3: Workplace Best Practices</li>
+            </ul>
+        </section>
+
+
+    </div>
+    
+    <div id="perform-dashboard">
+        <h1>My Current Goals</h1>
+        <ul id="goal-list">
+            <li>Complete Project X Deliverables</li>
+            <li>Improve Client Communication Skills</li>
+            <li>Attend Leadership Training</li>
+        </ul>
+    
+        <!-- Add New Goal Button -->
+        <button id="add-goal-button" type="button">+ Add New Goal</button>
+    
+        <!-- Hidden Add Goal Form -->
+        <form id="add-goal-form">
+            <label for="goal-description">Goal Description:</label>
+            <textarea id="goal-description" name="goal-description" rows="3"></textarea>
+    
+            <label for="target-date">Target Date:</label>
+            <input type="date" id="target-date" name="target-date">
+    
+            <button id="save-goal-button" type="submit">Save Goal</button>
+        </form>
+    </div>    
+    
+</body>
+</html>

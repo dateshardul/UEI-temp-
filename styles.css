@@ -1,0 +1,373 @@
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #add8e6; /* Light blue */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar .links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: white; /* White links */
+}
+
+.navbar .links a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard Styles */
+#recruit-dashboard,
+#onboard-dashboard,
+#perform-dashboard {
+    display: none; /* Initially hidden */
+    background-color: #f0f0f0; /* Light gray */
+    border: 1px solid black; /* Thin black border */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#job-posting-form {
+    display: none; /* Hide the form by default */
+    background-color: #f9f9f9; /* Light background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+#job-posting-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#job-posting-form input,
+#job-posting-form textarea,
+#job-posting-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#job-posting-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#job-posting-form button:hover {
+    background-color: #0056b3;
+}
+
+#candidate-table {
+    display: none;
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#candidate-table th, #candidate-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#candidate-table th {
+    background-color: #f2f2f2;
+}
+
+#onboard-dashboard {
+    display: none;
+    background-color: #f5f5f5;
+    border: 1px solid #000;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#onboard-dashboard {
+    display: none; /* Initially hidden */
+    background-color: #eef7ff; /* Light blue background */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+#onboard-dashboard h1 {
+    font-size: 24px;
+    color: #004080; /* Dark blue for emphasis */
+    margin-bottom: 10px;
+}
+
+#onboard-dashboard p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+#onboard-dashboard ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+}
+
+#onboard-dashboard ul li {
+    font-size: 16px;
+    color: #222;
+    padding: 8px;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#onboard-dashboard ul li::before {
+    content: "✔"; /* Checkmark icon */
+    color: #0073e6;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Hide the training modules section initially */
+.hidden {
+    display: none;
+}
+
+/* Style the button */
+#access-training-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#access-training-button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the training modules section */
+#training-modules-section {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+#training-modules-section h2 {
+    color: #333;
+    font-size: 20px;
+}
+
+#training-modules-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Hide the training modules section initially */
+#training-modules-section {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Style the heading inside the training modules section */
+#training-modules-section h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Style the training module list */
+#training-modules-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#training-modules-section ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+#perform-dashboard {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#perform-dashboard h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#perform-dashboard ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#perform-dashboard li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Style for the Goals Section */
+#perform-dashboard {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#perform-dashboard h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#goal-list {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#goal-list li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Add Goal Button */
+#add-goal-button {
+    display: block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#add-goal-button:hover {
+    background-color: #0056b3;
+}
+
+/* Add Goal Form (Initially Hidden) */
+#add-goal-form {
+    display: none; /* Hidden by default */
+    margin-top: 15px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-goal-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#goal-description,
+#target-date {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Save Goal Button */
+#save-goal-button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#save-goal-button:hover {
+    background-color: #218838;
+}
+
+/* Add New Goal Form (Initially Hidden) */
+#add-goal-form {
+    display: none; /* Hide form by default */
+    margin-top: 15px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Form Labels */
+#add-goal-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Input Fields */
+#goal-description,
+#target-date {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Save Goal Button */
+#save-goal-button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#save-goal-button:hover {
+    background-color: #218838;
+}
